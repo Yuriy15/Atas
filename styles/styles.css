@@ -1,0 +1,61 @@
+/* CSS Document */
+#body{
+margin-left: 10%;
+margin-right: 10%;
+margin-top: 4%;
+background-attachment: fixed;
+}
+
+#page
+ {
+ font-family: Tahoma, Helvetica, sans-serif;
+ font-size: 11px;
+ text-transform: uppercase;
+ line-height: 16px;
+ list-style-type: none;
+ }
+#left
+{
+  padding-left: 2.5%;
+} 
+#right
+{
+  padding-right: 6%;
+  float: right;
+  padding-top: 1%;
+}
+
+ul#main {
+ padding-top:0.15%;
+ margin-left: 0em;
+ padding-left: 25%;
+ margin-right: 0em;
+ padding-bottom:0.2em;
+ background: rgb(56,164,255);
+ width: auto;   /* Sirka Menu*/
+ float: middle;       
+ list-style-type:none;       
+}
+ 
+ ul#main li {
+ display: inline;
+ background: rgb(56,164,255); /* Barva ramecku pod textem*/
+ border-bottom: 1em solid grey; 
+ padding: 0.25em 3em 0.25em 0.7em;
+ opacity:0.85;
+ border-top:1em solid grey;
+}
+ul#main li a{ 
+text-decoration: none;
+font-family:sans-serif;
+ }
+ 
+ul#main li a:link { color: white; }
+ul#main li a:visited { color: #667; }
+ul#main li a:hover {
+ color: blue;     
+          }
+ul#main li:hover {
+ border-color: blue; /* Barva ramecku*/    
+ }
+ 
