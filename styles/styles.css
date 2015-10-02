@@ -8,15 +8,15 @@ list-style-type: none;
 }
 
 #page{
-margin-left: 7.5%;
-margin-right: 7.5%;
+margin-left: 20%;
+margin-right: 20%;
 margin-top: 4%;
 background-attachment: fixed;
 }
 
 .language{
 position: relative;
-left: 94.5%;
+left: 93%;
 top: 1em;
 } 
  
@@ -32,11 +32,11 @@ ul.main {
  
  ul.main li {
  display: inline;
- float: middle;
+ float: middle;    
  font-size: 13px;
  background: rgb(56,164,255); /* Barva ramecku pod textem*/
  border-bottom: 1em solid grey; 
- padding: 0.25% 3% 0.25% 1%;
+ padding: 0.25% 2% 0.25% 1%;
  margin: 0% 0% 0% 0%;
  opacity:1;
  border-top:1em solid grey;
@@ -67,10 +67,11 @@ ul.main li:hover {
   padding-bottom: 2em;
   background:white ; 
   background-attachment: fixed;
-  opacity:0.9;
   font-size: 12px;
  }
  .first{
  opacity:1;
+ text-transform: none;
+ font-size: 14px;
  }
  
