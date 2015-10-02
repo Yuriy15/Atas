@@ -1,91 +1,76 @@
 /* CSS Document */
-#body{
-margin-left: 10%;
-margin-right: 10%;
+
+body{
+font-family: Tahoma, Helvetica, sans-serif;
+text-transform: uppercase;
+line-height: 16px;
+list-style-type: none;
+}
+
+#page{
+margin-left: 7.5%;
+margin-right: 7.5%;
 margin-top: 4%;
 background-attachment: fixed;
 }
 
-#page
- {
- font-family: Tahoma, Helvetica, sans-serif;
- font-size: 11px;
- text-transform: uppercase;
- line-height: 16px;
- list-style-type: none;
- }
-#left
-{
-  position: relative;
-  left: 2.5%;
-  top: 10px;
-  
-  
+.language{
+position: relative;
+left: 94.5%;
+top: 1em;
 } 
-#right
-{
-  float: right;
-  position:relative;
-  top:0.5em;
-  right: 5%;
-}
-
-ul#main {
- padding-top:0.15%;
- padding-bottom:0.2em;
+ 
+ul.main {
  background: rgb(56,164,255);
  width: auto;   /* Sirka Menu*/
  float: middle;       
- list-style-type:none;     
+ list-style-type:none;
+ text-align:center;
+ position:relative;
+ right: 2%;    
 }
  
- ul#main li {
+ ul.main li {
  display: inline;
- position:relative;
- left: 25%;
+ float: middle;
+ font-size: 13px;
  background: rgb(56,164,255); /* Barva ramecku pod textem*/
  border-bottom: 1em solid grey; 
- padding: 0.25em 3em 0.25em 0.7em;
- opacity:0.85;
+ padding: 0.25% 3% 0.25% 1%;
+ margin: 0% 0% 0% 0%;
+ opacity:1;
  border-top:1em solid grey;
 }
-ul#main li a{ 
+ul.main li a{ 
 text-decoration: none;
 font-family:sans-serif;      
  }
  
-ul#main li a:link { color: white; }
-ul#main li a:visited { color: #667; }
-ul#main li a:hover {  
+ul.main li a:link { color: white; }
+ul.main li a:visited { color: #667; }
+ul.main li a:hover {  
  color: blue;     
           }
-ul#main li:hover {  
+ul.main li:hover {  
  border-color: blue; /* Barva ramecku*/    
  }
  
-#slideshow {  
-  margin: auto;
-  position: absolute;
-  margin-left: 2%;
-  margin-right: 2%; 
-  top: 12.7%;
-  left: 0%;
-  opacity: 0.5;
-  z-index:-1;
- }
- #pages{
+ .pages{
   border: 1px solid white;
   border-radius:0.5%;
   position:relative;
-  margin-left: 30em;
-  margin-right: 10em;
-  margin-top: 15em;
+  top: 10em;
+  left: 8em;
+  margin-right: 16em;
   padding-top: 2em;
+  padding-left: 1%;
   padding-bottom: 2em;
   background:white ; 
   background-attachment: fixed;
-  opacity:0.6;
+  opacity:0.9;
+  font-size: 12px;
  }
- #first{
+ .first{
  opacity:1;
  }
+ 
