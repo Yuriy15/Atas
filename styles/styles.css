@@ -1,77 +1,119 @@
 /* CSS Document */
-
+/* Logo, pozice, etc. */
 body{
 font-family: Tahoma, Helvetica, sans-serif;
 text-transform: uppercase;
-line-height: 16px;
-list-style-type: none;
+list-style-type: none;  
+background-image: url("../images/logo2.png"); 
+background-position: top; 
+background-attachment: scroll;  
+background-repeat: no-repeat;
+background-size: auto;
+background-color: rgb(192,192,192);
+overflow-x: hidden;
+}
+.language img {
+  position:relative;
+  top:0%;
+  left:70%;
+  size:auto;
+}
+.language img:hover{
+box-shadow: 5px 5px 5px #ccc;
 }
 
-#page{
-margin-left: 20%;
-margin-right: 20%;
-margin-top: 4%;
-background-attachment: fixed;
-}
-
-.language{
-position: relative;
-left: 93%;
-top: 1em;
-} 
- 
-ul.main {
- background: rgb(56,164,255);
- width: auto;   /* Sirka Menu*/
+/* menu pozice*/
+ul.main{
  float: middle;       
  list-style-type:none;
- text-align:center;
+ text-align:center;  
  position:relative;
- right: 2%;    
+ top: 5.3em;
+ left:6.5em;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
 }
  
- ul.main li {
- display: inline;
- float: middle;    
- font-size: 13px;
- background: rgb(56,164,255); /* Barva ramecku pod textem*/
- border-bottom: 1em solid grey; 
- padding: 0.25% 2% 0.25% 1%;
- margin: 0% 0% 0% 0%;
- opacity:1;
- border-top:1em solid grey;
+ul.main li{
+ display: inline;   
+ font-size: 75%;
 }
 ul.main li a{ 
 text-decoration: none;
-font-family:sans-serif;      
- }
- 
+font-family:sans-serif;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 7.5px;      
+} 
 ul.main li a:link { color: white; }
-ul.main li a:visited { color: #667; }
-ul.main li a:hover {  
- color: blue;     
-          }
-ul.main li:hover {  
- border-color: blue; /* Barva ramecku*/    
- }
- 
- .pages{
-  border: 1px solid white;
-  border-radius:0.5%;
-  position:relative;
-  top: 10em;
-  left: 8em;
-  margin-right: 16em;
-  padding-top: 2em;
-  padding-left: 1%;
-  padding-bottom: 2em;
-  background:white ; 
-  background-attachment: fixed;
+ul.main li a:visited { color: white; }
+ul.main li a:hover{
+color: yellow;
+text-shadow: 0.5px 0.5px 1px black;
+}
+
+#contents{ 
+  border: 1px solid rgb(64,81,238); 
+  border-radius:0.5%;  
+  background:rgb(173,196,222);  
+  background-attachment: fixed; 
+  height: 100%;
   font-size: 12px;
+  opacity: 1; 
+  width: 50%;
+  margin-left: 25%;
+  padding-left: 1%;
+  padding-bottom: 10%;
+  position:relative;   
+  top:21em;
+} 
+
+.text{ 
+  opacity:1; 
+  text-transform: none; 
+  font-size: 14px; 
+} 
+
+.obrazek {
+ display: inline;
+ position:relative;
+ top:1em;
  }
- .first{
- opacity:1;
- text-transform: none;
- font-size: 14px;
+ .obrazek img:hover{
+  border: 1px solid yellow;
  }
- 
+.popisek {
+ position: absolute;
+ left: 50%;
+ top: 100%;
+ display: none;
+ margin-left: -100px;
+ width: 180px;
+ border: 1px solid #666;
+ padding: 10px; 
+ background: #fff; 
+ z-index: 100;
+ transition: opacity .5s; -webkit-transition: opacity .5s;
+ opacity: 0
+ }
+.obrazek:hover .popisek {
+ display: block;
+ border: 1px solid yellow;
+ box-shadow: 10px 10px 5px #ccc;
+ opacity: 1
+ }
+.popisek .sipka, .popisek .sipka-obal{
+ position: absolute;
+ top: -10px; left: 50%;
+ margin-left: -5px; 
+ width: 0px;
+ height: 0px; 
+ border: solid transparent;
+ border-width: 0 10px 10px 10px;
+ border-bottom-color: #000
+ }
+.popisek .sipka-obal{
+ border-bottom-color: #fff;
+ margin: 1px 0 0 -4px;
+ border-width: 0 9px 9px 9px
+}
+
